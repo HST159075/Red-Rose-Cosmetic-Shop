@@ -212,15 +212,15 @@ body {
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 30px;
 }
 
 .footer-section {
-  flex: 1 1 220px;
+  flex: 1;
   min-width: 220px;
 }
 
@@ -247,6 +247,15 @@ body {
   font-size: 1.1rem;
 }
 
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
 .footer-section ul li a {
   text-decoration: none;
   color: #333;
@@ -266,6 +275,7 @@ body {
   color: #d7263d;
   margin-right: 12px;
   font-size: 1.2rem;
+  transition: color 0.3s;
 }
 
 .social-icons a:hover {
@@ -279,31 +289,69 @@ body {
   color: #666;
 }
 
-/* ===== Responsive ===== */
+/* ===== Responsive Design ===== */
 @media (max-width: 1200px) {
   .product-card {
-    flex: 1 1 calc(20% - 16px); /* 5 per row large desktop */
+    flex: 1 1 calc(20% - 16px);
     max-width: calc(20% - 16px);
   }
 }
 
 @media (max-width: 992px) {
   .product-card {
-    flex: 1 1 calc(25% - 15px); /* Tablet: 4 per row */
+    flex: 1 1 calc(25% - 15px);
     max-width: calc(25% - 15px);
   }
 }
 
 @media (max-width: 768px) {
   .product-card {
-    flex: 1 1 calc(33.33% - 12px); /* Mobile: 3 per row */
+    flex: 1 1 calc(33.33% - 12px);
     max-width: calc(33.33% - 12px);
   }
 }
 
 @media (max-width: 480px) {
   .product-card {
-    flex: 1 1 calc(50% - 10px); /* Small Mobile: 2 per row */
+    flex: 1 1 calc(50% - 10px);
     max-width: calc(50% - 10px);
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .product-image {
+    height: 180px;
+  }
+
+  .product-card p,
+  .product-card .sale-price,
+  .product-card .regular-price {
+    font-size: 0.72rem;
+  }
+
+  .add-cart {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+  }
+
+  /* Footer responsive — still row layout */
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    flex: 1 1 45%;
+    min-width: 150px;
+  }
+
+  .footer-section h4 {
+    font-size: 1rem;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 0.85rem;
   }
 }
