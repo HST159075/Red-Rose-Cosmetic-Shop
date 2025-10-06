@@ -355,3 +355,8 @@ body {
     font-size: 0.85rem;
   }
 }
+html {
+  -webkit-text-size-adjust: 100%; /* Safari/Chrome zoom fix */
+}
+
+
