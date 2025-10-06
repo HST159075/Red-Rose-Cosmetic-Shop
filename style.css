@@ -1,4 +1,6 @@
-/* ========== Top Navbar ========== */
+/* =====================
+   Top Navbar
+   ===================== */
 .top-navbar {
   background: #fff6f0;
   display: flex;
@@ -35,7 +37,10 @@
 .top-navbar .right-links i:hover {
   color: #a91e2b;
 }
-/* ========== Main Navbar ========== */
+
+/* =====================
+   Main Navbar
+   ===================== */
 .main-navbar {
   background: #fffaf6;
   display: flex;
@@ -45,25 +50,20 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-/* Logo style */
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 1px;
 }
 
-.logo .red {
-  color: #d7263d; /* Red part */
-}
-
+.logo .red { color: #d7263d; }
 .logo .rose {
-  color: #ffffff; /* White text */
-  background: #d7263d; /* Red background for contrast */
+  color: #fff;
+  background: #d7263d;
   padding: 2px 6px;
   border-radius: 5px;
 }
 
-/* Navbar links (center section) */
 .nav-links {
   display: flex;
   gap: 25px;
@@ -77,11 +77,8 @@
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  color: #d7263d;
-}
+.nav-links a:hover { color: #d7263d; }
 
-/* Icons (right section) */
 .nav-icons {
   display: flex;
   gap: 18px;
@@ -90,38 +87,7 @@
   cursor: pointer;
 }
 
-.nav-icons i:hover {
-  color: #d7263d;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .main-navbar {
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px 20px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .top-navbar {
-    flex-direction: column;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .left-links, .right-links {
-    margin: 5px 0;
-  }
-}
-
+.nav-icons i:hover { color: #d7263d; }
 
 /* =====================
    Slideshow Section
@@ -139,9 +105,7 @@
   border-radius: 12px;
 }
 
-.slide {
-  display: none;
-}
+.slide { display: none; }
 
 .slide img {
   width: 100%;
@@ -150,7 +114,6 @@
   border-radius: 12px;
 }
 
-/* fade effect */
 .fade {
   animation-name: fade;
   animation-duration: 1s;
@@ -167,13 +130,6 @@
 .info-section {
   background: #fff6f0;
   padding: 40px 20px;
-}
-
-.info-box i {
-  font-size: 2rem;
-  color: #d7263d;
-  margin-bottom: 10px;
-  display: block;
 }
 
 .info-container {
@@ -195,8 +151,13 @@
   transition: transform 0.2s ease;
 }
 
-.info-box:hover {
-  transform: translateY(-5px);
+.info-box:hover { transform: translateY(-5px); }
+
+.info-box i {
+  font-size: 2rem;
+  color: #d7263d;
+  margin-bottom: 10px;
+  display: block;
 }
 
 .info-box h3 {
@@ -211,6 +172,7 @@
   font-size: 0.95rem;
   line-height: 1.4;
 }
+
 /* =====================
    Product Section
    ===================== */
@@ -238,16 +200,14 @@
   color: #d7263d;
 }
 
-/* Flexbox layout */
 .flex-box {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-/* Each product card */
 .product-card {
-  flex: 1 1 calc(25% - 20px); /* 4 cards in desktop */
+  flex: 1 1 calc(25% - 20px);
   background: #fff6f0;
   border-radius: 12px;
   padding: 15px;
@@ -257,24 +217,21 @@
   overflow: hidden;
 }
 
-.product-card:hover {
-  transform: translateY(-5px);
-}
+.product-card:hover { transform: translateY(-5px); }
 
-/* Image container with hover image */
 .product-image {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  height: 220px; /* fixed height for uniform look */
+  height: 220px;
 }
 
 .product-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* fills container nicely */
+  object-fit: cover;
   border-radius: 8px;
-  transition: opacity 0.3s ease; /* smooth fade only */
+  transition: opacity 0.3s ease;
 }
 
 .hover-img {
@@ -288,22 +245,9 @@
   border-radius: 8px;
 }
 
-.product-card:hover .hover-img {
-  opacity: 1;
-}
+.product-card:hover .hover-img { opacity: 1; }
+.product-card:hover .main-img { opacity: 0; }
 
-.product-card:hover .main-img {
-  opacity: 0;
-}
-
-/* ✅ Zoom effect removed
-   যদি আবার Zoom চাই, তাহলে নিচের কোডটা আনকমেন্ট করে দিবে:
-   .product-card:hover .product-image img {
-     transform: scale(1.05);
-   }
-*/
-
-/* Add to Cart button */
 .add-cart {
   position: absolute;
   bottom: -40px;
@@ -325,11 +269,8 @@
   opacity: 1;
 }
 
-.add-cart:hover {
-  background: #a91e2b;
-}
+.add-cart:hover { background: #a91e2b; }
 
-/* Product text */
 .product-card p {
   font-size: 0.9rem;
   color: #444;
@@ -348,141 +289,8 @@
 }
 
 /* =====================
-   Responsive
+   Footer Section
    ===================== */
-@media (max-width: 992px) {
-  .product-card {
-    flex: 1 1 calc(33.33% - 20px); /* tablet: 3 in a row */
-  }
-}
-
-@media (max-width: 768px) {
-  .product-card {
-    flex: 1 1 calc(50% - 20px); /* mobile: 2 in a row */
-  }
-}
-
-@media (max-width: 480px) {
-  .product-card {
-    flex: 1 1 100%; /* small mobile: 1 in a row */
-  }
-}
-
-
-/* =====================
-   Responsive
-   ===================== */
-@media (max-width: 992px) {
-  .product-card {
-    flex: 1 1 calc(33.33% - 20px); /* tablet: 3 in a row */
-  }
-}
-
-@media (max-width: 768px) {
-  .product-card {
-    flex: 1 1 calc(50% - 20px); /* mobile: 2 in a row */
-  }
-}
-
-@media (max-width: 480px) {
-  .product-card {
-    flex: 1 1 100%; /* small mobile: 1 in a row */
-  }
-}
-
-
-/* =====================
-   Responsive Media Queries
-   ===================== */
-@media (max-width: 900px) {
-  .product-card {
-    flex: 1 1 calc(50% - 20px);
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .navbar .link {
-    padding: 8px;
-    font-size: 0.95rem;
-  }
-
-  .Red-Rose {
-    font-size: 1.2rem;
-  }
-
-  .search-input.active {
-    width: 150px;
-  }
-
-  .slide img {
-    height: 250px;
-  }
-
-  .info-container {
-    justify-content: center;
-  }
-
-  .info-box {
-    flex: 1 1 45%;
-  }
-}
-
-@media (max-width: 500px) {
-  .product-card {
-    flex: 1 1 calc(50% - 10px);
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar {
-    padding: 10px;
-    gap: 8px;
-  }
-
-  .navbar .link {
-    font-size: 0.85rem;
-    padding: 6px;
-  }
-
-  .Red-Rose {
-    font-size: 1rem;
-  }
-
-  .search-input.active {
-    width: 120px;
-  }
-
-  .slide img {
-    height: 200px;
-  }
-
-  .info-box {
-    flex: 1 1 100%;
-  }
-
-  .info-box h3 {
-    font-size: 1rem;
-  }
-
-  .info-box p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 350px) {            
-  .product-card {
-    flex: 1 1 100%;
-  }
-}
-/* ===== Existing CSS (Navbar, Slideshow, Info, Products) ===== */
-/* ... [Previous CSS] ... */
-
 .footer {
   background: #f8f8f8;
   color: #333;
@@ -497,7 +305,7 @@
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap; /* এক লাইনে রাখবে, কিন্তু দরকারে মোড়াবে */
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1200px;
@@ -516,10 +324,7 @@
   margin-bottom: 15px;
 }
 
-.footer-logo .red {
-  color: #d7263d;
-}
-
+.footer-logo .red { color: #d7263d; }
 .footer-logo .rose {
   color: #fff;
   background: #d7263d;
@@ -553,9 +358,7 @@
   transition: color 0.3s;
 }
 
-.footer-section ul li a:hover {
-  color: #d7263d;
-}
+.footer-section ul li a:hover { color: #d7263d; }
 
 .social-icons {
   margin-top: 10px;
@@ -571,9 +374,7 @@
   transition: color 0.3s;
 }
 
-.social-icons a:hover {
-  color: #a91e2b;
-}
+.social-icons a:hover { color: #a91e2b; }
 
 .footer-bottom {
   text-align: center;
@@ -588,15 +389,42 @@
   line-height: 1.4;
 }
 
-/* ছোট স্ক্রিনেও row আকারে রাখবে */
+/* =====================
+   Responsive Design
+   ===================== */
+@media (max-width: 992px) {
+  .product-card { flex: 1 1 calc(33.33% - 20px); }
+}
+
+@media (max-width: 768px) {
+  .main-navbar { flex-direction: column; gap: 10px; padding: 15px 20px; }
+  .nav-links { flex-wrap: wrap; justify-content: center; gap: 15px; }
+  .top-navbar { flex-direction: column; text-align: center; padding: 10px; }
+  .left-links, .right-links { margin: 5px 0; }
+  .product-card { flex: 1 1 calc(50% - 20px); }
+  .info-container { justify-content: center; }
+  .info-box { flex: 1 1 45%; }
+}
+
 @media (max-width: 600px) {
   .footer-container {
     flex-wrap: nowrap;
-    overflow-x: auto; /* জায়গা না হলে horizontally scroll হবে */
+    overflow-x: auto;
     justify-content: flex-start;
   }
+  .footer-section { flex: 0 0 250px; }
+  .product-card p { font-size: 0.8rem; }
+  .regular-price, .sale-price { font-size: 0.85rem; }
+  .add-cart { font-size: 0.8rem; padding: 6px 12px; }
+}
 
-  .footer-section {
-    flex: 0 0 250px; /* প্রতিটা section-এর প্রস্থ fix করা হলো */
-  }
+@media (max-width: 400px) {
+  .product-card p { font-size: 0.75rem; }
+  .regular-price, .sale-price { font-size: 0.8rem; }
+  .add-cart { font-size: 0.75rem; padding: 5px 10px; }
+  .info-box { flex: 1 1 100%; }
+}
+
+@media (max-width: 350px) {
+  .product-card { flex: 1 1 100%; }
 }
