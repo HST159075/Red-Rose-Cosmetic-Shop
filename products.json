@@ -9,30 +9,22 @@
   },
   {
     "id": 2,
-    "name": "Another Product",
-    "regular_price": 899,
-    "sale_price": 499,
-    "main_img": "product2-main.jpg",
-    "hover_img": "product2-hover.jpg"
+    "name": "Osufi Serum (Original) – SB13354 100% Korean Skin Care Serum for Glowing &amp; Fair Skin",
+    "regular_price": 999,
+    "sale_price": 799,
+    "main_img": "osufi.jpg",
+    "hover_img": "osufi.jpg"
   },
 
 
   {
     "id": 3,
-    "name": "Rose Water Toner (200ml)",
-    "regular_price": 350,
-    "sale_price": 250,
-    "main_img": "Red-lipstick-hover.jpg",
-    "hover_img": ".jpg"
+    "name": "latest hand bags",
+    "regular_price": 1699,
+    "sale_price": 1499,
+    "main_img": "handbag1.jpg",
+    "hover_img": "handbag2.jpg"
   
-  },
-  {
-    "id": 4,
-    "name": "Vitamin C Serum (30ml)",
-    "regular_price": 899,
-    "sale_price": 699,
-    "main_img": "Vitc-serum.jpg",
-    "hover_img": "Vitc-serum-hover.jpg"
-    
   }
+  
 ]
