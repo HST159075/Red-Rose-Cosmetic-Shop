@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "Lafz Onion Seed Oil Scalp Serum (50ml)",
+        "regular_price": 699,
+        "sale_price": 299,
+        "main_img": "Red-lipstick-hover.jpg",
+        "hover_img": "Red-lipstick.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Osufi Serum (Original) – SB13354 100% Korean Skin Care Serum for Glowing &amp; Fair Skin",
+        "regular_price": 1000,
+        "sale_price": 850,
+        "main_img": "osufi.jpg",
+        "hover_img": "osufi.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Lancome Idôle Women Eau de Parfum Spray 75ml",
+        "regular_price": 899,
+        "sale_price": 699,
+        "main_img": "Idole- parfum.jpg",
+        "hover_img": "Idole- parfum.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Vitamin C Serum (30ml)",
+        "regular_price": 899,
+        "sale_price": 699,
+        "main_img": "Vitc-serum.jpg",
+        "hover_img": "Vitc-serum-hover.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Vitamin C Serum (30ml)",
+        "regular_price": 899,
+        "sale_price": 699,
+        "main_img": "Vitc-serum.jpg",
+        "hover_img": "Vitc-serum-hover.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Handbags for Girls Ladies Purses and Crossbody Shoulder Mini Small Little Hand Bags",
+        "regular_price": 1699,
+        "sale_price": 1499,
+        "main_img": "handbag2.jpg",
+        "hover_img": "handbag2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Artificial Leather Thai Stylish Hand Bag For Women - Black - N290 B",
+        "regular_price": 1699,
+        "sale_price": 1499,
+        "main_img": "handbag1.jpg",
+        "hover_img": "handbag1.jpg"
+    }
+]
